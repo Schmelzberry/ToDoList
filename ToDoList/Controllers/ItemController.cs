@@ -15,7 +15,7 @@ namespace ToDoList.Controllers
     }
 
     [HttpGet("/items/new")]
-    public ActionResult CreateForm() //  the CreateForm() route method will automatically render this view
+    public ActionResult New() 
     {
       return View();
     }
@@ -33,5 +33,7 @@ namespace ToDoList.Controllers
       Item.ClearAll();
       return View();
     }
+
+    
   }
 }
